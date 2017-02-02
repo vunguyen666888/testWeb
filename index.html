@@ -1,0 +1,49 @@
+<!--
+filename: main.js
+
+purpose: controls the program.
+
+created by: Vu Anh Tuan Nguyen
+
+created on: 08/11/2016
+
+last edited: 14/11/2016
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>Calculator- Demo</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+<link rel="stylesheet" href="css/main.css"/>
+</head>
+<body ng-app="app">
+<div class="calculator" ng-controller="CalculatorController"> 
+  <!-- Display output -->
+  <div class="display-container">
+    <h5> Demo Calculator</h5>
+    <div class="display-content-wrapper"><div class="display" out-Put></div></div>
+  <!-- <div class="display-content-wrapper"> <span class="display" >dsadad2q3242534573585sfdsf</span> </div>-->
+  </div>
+  
+  <!-- Calculator buttons -->
+  <div class="button-list"> <span class="button orange" ng-click="clear()">C</span> <span class="button dark pow" ng-click="clickPow()">x<sup><small>y</small></sup></span> <span class="button dark" ng-click="clickSqrt()"><sup><small>2</small></sup><b>&#x221a;</b></span> <span class="button dark" ng-click="clickDivide()"><b>÷</b></span> <span class="button" ng-click="clickNumber(7)">7</span> <span class="button" ng-click="clickNumber(8)">8</span> <span class="button" ng-click="clickNumber(9)">9</span> <span class="button dark" ng-click="clickMultiply()"><small>x</small></span> <span class="button" ng-click="clickNumber(4)">4</span> <span class="button" ng-click="clickNumber(5)">5</span> <span class="button" ng-click="clickNumber(6)">6</span> <span class="button dark" ng-click="clickSubtract()"><b>-</b></span> <span class="button" ng-click="clickNumber(1)">1</span> <span class="button" ng-click="clickNumber(2)">2</span> <span class="button" ng-click="clickNumber(3)">3</span> <span class="button dark" ng-click="clickPlus()"><b>+</b></span> <span class="button" ng-click="clickNegative('+/-')"><b><sup>+</sup></b><small>/</small><b><sub>-</sub></b></span> <span class="button" ng-click="clickNumber(0)">0</span> <span class="button" ng-click="clickDot('.')"><b>.</b></span> <span class="button bright" ng-click="clickCalculate()"><b>=</b></span> </div>
+  <!-- Using to test/ check the program
+      {{"previousOperator: "+previousOperator}}<br/>
+      {{" operator: "+operator}}<br/>
+      {{"test:   "+test }}
+      <br/>{{"test2:   "+test2}}<br/>
+      {{"isFirstDigit:   "+isFirstDigit}}<br/>
+      {{"test3:   "+test3}}          
+      {{"check"+checkIndex +" ---2 : "+checkIndex+" 3   "+checkIndex3}}
+		  --> 
+</div>
+<div id="copyright"> &copy;2016| "Our pretend company" Reserved </div>
+</div>
+<!-- App Script --> 
+<script type="text/javascript" src="lib/angular.min.js"></script> 
+<script type="text/javascript" src="javaScript/main.js"></script>
+</body>
+</html>
